@@ -10,6 +10,22 @@ public class VoeuxMaison extends Voeux  {
 		this.localisation=local;
 		this.prix=prix;
 	}
+
+	public int getSurface() {
+		return surface;
+	}
+
+	public void setSurface(int surface) {
+		this.surface = surface;
+	}
+
+	public int getNbPieces() {
+		return nbPieces;
+	}
+
+	public void setNbPieces(int nbPieces) {
+		this.nbPieces = nbPieces;
+	}
 	
 
 

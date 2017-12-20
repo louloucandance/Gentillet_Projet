@@ -1,6 +1,7 @@
 package Bien;
 
 import Bien.Bien.PointsCardinaux;
+import Bien.Bien.TypeBien;
 
 public class Terrain extends Bien {
 	private int surfaceSol;
@@ -15,7 +16,7 @@ public class Terrain extends Bien {
 		this.numInterne=num;
 		this.longueurFacade=longueur;
 		this.surfaceSol=surface;
-		this.TypeBien=Terrain;
+		this.type=type.Terrain;
 	}
 
 	public int getSurfaceSol() {
@@ -33,6 +34,4 @@ public class Terrain extends Bien {
 	public void setLongueurFacade(int longueurFacade) {
 		this.longueurFacade = longueurFacade;
 	}
-
-
 }

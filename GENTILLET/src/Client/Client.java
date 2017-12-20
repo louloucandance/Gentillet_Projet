@@ -14,11 +14,11 @@ public class Client {
 	}
 	
 	//Factory client :
-	public Client creerClient(String nom, String adr, int tel, String mail) {
+	public static Client creerClient(String nom, String adr, int tel, String mail) {
 		return new Client(nom, adr, tel, mail);
 	}
 	public Entreprise creerEntreprise(String nom, String adr, int tel, String mail, int siren, String jur) {
-		return new Entreprise(nom, adr, tel, mail, siren, jur);
+		return new Entreprise(nom, adr,  tel, mail, siren, jur);
 	}
 	
 	//GETTERS ET SETTERS
@@ -45,7 +45,6 @@ public class Client {
 	}
 	public void setMail(String mail) {
 		this.mail = mail;
-	}
-	
+	}	
 	
 }

@@ -19,7 +19,7 @@ public class Appartement extends Bien {
 		this.etage=etage;
 		this.nbPieces=pieces;
 		this.chargesMensuelles=charges;
-		this.TypeBien=Terrain;
+		this.type=type.Appartement;
 	}
 
 //GETTERS ET SETTERS

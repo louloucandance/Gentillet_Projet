@@ -1,7 +1,5 @@
 package Bien;
 
-import Bien.Bien.PointsCardinaux;
-
 public class Bien {
 	public String adresse;
 	public PointsCardinaux orientation;
@@ -21,16 +19,16 @@ public class Bien {
 		  SUD, NORD, EST, OUEST;	
 		}
 	//Factory maison
-	public Maison creerMaison(String adr, PointsCardinaux orient, int prix, String dispo, String vente, int num, int etage, int pieces, MoyenChauffage chauff) {
+	public static Maison creerMaison(String adr, PointsCardinaux orient, int prix, String dispo, String vente, int num, int etage, int pieces, MoyenChauffage chauff) {
 		return new Maison(adr, orient, prix, dispo, vente, num, etage, pieces, chauff);
 	}
 	
 	//Factory appartement
 	public Appartement creerAppartement(String adr, PointsCardinaux orient, int prix, String dispo, String vente, int num, int etage, int pieces, int charges){
-		return new Appartementadr, orient, prix, dispo, vente, num, etage, pieces, charges);
+		return new Appartement(adr, orient, prix, dispo, vente, num, etage, pieces, charges);
 	}
 	
-	
+	//Factory terrain
 	public Terrain creerTerrain(String adr, PointsCardinaux orient, int prix, String dispo, String vente, int num, int surface, int longueur) {
 		return new Terrain(adr, orient, prix, dispo,  vente, num, surface, longueur);
 	}
@@ -84,6 +82,12 @@ public class Bien {
 
 	public void setNumInterne(int numInterne) {
 		this.numInterne = numInterne;
+	}
+	@Override
+	public String toString() {
+		return("Bien numéro "+this.getNumInterne()+
+				"\nprix : " + this.getPrix()+
+				"\ndate de disponnibilité : "+this.getDateDispo());
 	}
 
 

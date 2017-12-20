@@ -1,6 +1,6 @@
 package Client;
 
-public class Voeux{
+public abstract class Voeux{
 	public int prix;
 	public String localisation;
 	

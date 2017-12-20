@@ -1,6 +1,7 @@
 package Bien;
 
 import Bien.Bien.PointsCardinaux;
+import Bien.Bien.TypeBien;
 
 public class Maison extends Bien {
 	private int nbEtage;
@@ -18,7 +19,7 @@ public class Maison extends Bien {
 		this.nbEtage=etage;
 		this.nbPieces=pieces;
 		this.chauffage=chauff;
-		this.TypeBien=Maison;
+		this.type=type.Maison;
 	}
 
 	public int getNbEtage() {
