@@ -5,12 +5,9 @@ public class Entreprise extends Client {
 	private String formeJuridique;
 	
 	public Entreprise(String nom, String adr, int tel, String mail, int siren, String jur) {
-		this.nom=nom;
-		this.adresse=adr;
-		this.telephone=tel;
-		this.mail=mail;
+		super(nom, adr, tel, mail);
 		this.siren=siren;
-		this.formeJuridique=jur;
+		this.formeJuridique = jur;
 	}
 
 	public int getSiren() {
