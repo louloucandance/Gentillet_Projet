@@ -1,6 +1,7 @@
 package Bien;
 
-public class Bien {
+
+public class Bien{
 	public String adresse;
 	public PointsCardinaux orientation;
 	public int prix;
